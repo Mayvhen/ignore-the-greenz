@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "seethroughleaves",
+	"version": "${version}",
+	"name": "See Through Leaves",
+	"description": "Your crosshair and attacks ignore leaves, so you can hit the logs hidden behind them.",
+	"authors": [
+		"You"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.seethroughleaves.client.SeeThroughLeavesClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "seethroughleaves.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

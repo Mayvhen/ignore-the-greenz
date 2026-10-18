@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "dev.seethroughleaves.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ClipContextMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
