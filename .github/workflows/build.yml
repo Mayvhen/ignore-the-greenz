@@ -12,5 +12,5 @@ jobs:
       - run: chmod +x gradlew && ./gradlew build
       - uses: actions/upload-artifact@v4
         with:
-          name: see-through-leaves
+          name: ignore-the-greenz
           path: output/*.jar
