@@ -10,6 +10,6 @@ public class SeeThroughLeavesClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		LOGGER.info("See Through Leaves loaded: your crosshair now ignores leaves.");
+		LOGGER.info("Ignore the Greenz loaded: your crosshair now looks through decorative foliage.");
 	}
 }

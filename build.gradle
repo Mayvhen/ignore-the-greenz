@@ -3,8 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
-// Compiled classes and the finished mod jar land in "output/" at the repo root.
-layout.buildDirectory.set(file("../output"))
+// Compiled classes and the finished mod jar land in "output/".
+layout.buildDirectory.set(file("output"))
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
@@ -25,13 +25,13 @@ loom {
 	}
 }
 
-// The compiled mod jar lands directly in ../output; extra jars (sources, dev)
-// stay under ../output/libs. Loom registers its jar tasks lazily, so match by name.
+// The compiled mod jar lands directly in output/; extra jars (sources, dev) stay
+// under output/libs. Loom registers its jar tasks lazily, so match them by name.
 tasks.matching { it.name == "remapJar" }.configureEach {
-	destinationDirectory.set(file("../output"))
+	destinationDirectory.set(file("output"))
 }
 tasks.matching { it.name == "jar" }.configureEach {
-	destinationDirectory.set(file("../output"))
+	destinationDirectory.set(file("output"))
 }
 
 dependencies {

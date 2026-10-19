@@ -2,6 +2,9 @@
 .gradle/
 build/
 
+# Compiled mod output
+output/
+
 # Loom run directory (game files, logs, worlds)
 run/
 
