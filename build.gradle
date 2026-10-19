@@ -18,7 +18,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"seethroughleaves" {
+		"ignorethegreenz" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

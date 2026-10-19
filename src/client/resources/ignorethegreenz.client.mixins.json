@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "dev.seethroughleaves.client.mixin",
+	"package": "dev.ignorethegreenz.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
 		"ClipContextMixin"

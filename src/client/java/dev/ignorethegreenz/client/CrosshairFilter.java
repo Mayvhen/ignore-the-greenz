@@ -1,4 +1,4 @@
-package dev.seethroughleaves.client;
+package dev.ignorethegreenz.client;
 
 import java.util.Set;
 

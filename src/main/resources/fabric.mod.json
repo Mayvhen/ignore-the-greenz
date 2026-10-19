@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "seethroughleaves",
+	"id": "ignorethegreenz",
 	"version": "${version}",
 	"name": "Ignore the Greenz",
 	"description": "Your crosshair and attacks ignore leaves, grass, flowers, bushes and other decorative foliage, so you can hit what is hidden behind them.",
@@ -11,12 +11,12 @@
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"dev.seethroughleaves.client.SeeThroughLeavesClient"
+			"dev.ignorethegreenz.client.IgnoreTheGreenzClient"
 		]
 	},
 	"mixins": [
 		{
-			"config": "seethroughleaves.client.mixins.json",
+			"config": "ignorethegreenz.client.mixins.json",
 			"environment": "client"
 		}
 	],

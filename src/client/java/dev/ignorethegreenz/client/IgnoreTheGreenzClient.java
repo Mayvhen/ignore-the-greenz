@@ -1,11 +1,11 @@
-package dev.seethroughleaves.client;
+package dev.ignorethegreenz.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class SeeThroughLeavesClient implements ClientModInitializer {
-	public static final String MOD_ID = "seethroughleaves";
+public class IgnoreTheGreenzClient implements ClientModInitializer {
+	public static final String MOD_ID = "ignorethegreenz";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override

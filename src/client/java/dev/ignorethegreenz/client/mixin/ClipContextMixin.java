@@ -1,6 +1,6 @@
-package dev.seethroughleaves.client.mixin;
+package dev.ignorethegreenz.client.mixin;
 
-import dev.seethroughleaves.client.CrosshairFilter;
+import dev.ignorethegreenz.client.CrosshairFilter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -30,7 +30,7 @@ public abstract class ClipContextMixin {
 	private ClipContext.Block block;
 
 	@Inject(method = "getBlockShape", at = @At("HEAD"), cancellable = true)
-	private void seethroughleaves$ignoreFoliage(BlockState state, BlockGetter level, BlockPos pos,
+	private void ignorethegreenz$ignoreFoliage(BlockState state, BlockGetter level, BlockPos pos,
 			CallbackInfoReturnable<VoxelShape> cir) {
 		if (this.block == ClipContext.Block.OUTLINE
 				&& level == Minecraft.getInstance().level
