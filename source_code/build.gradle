@@ -3,6 +3,9 @@ plugins {
 	id 'maven-publish'
 }
 
+// Compiled classes and the finished mod jar land in "output/" at the repo root.
+layout.buildDirectory.set(file("../output"))
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -20,6 +23,15 @@ loom {
 			sourceSet sourceSets.client
 		}
 	}
+}
+
+// The compiled mod jar lands directly in ../output; extra jars (sources, dev)
+// stay under ../output/libs. Loom registers its jar tasks lazily, so match by name.
+tasks.matching { it.name == "remapJar" }.configureEach {
+	destinationDirectory.set(file("../output"))
+}
+tasks.matching { it.name == "jar" }.configureEach {
+	destinationDirectory.set(file("../output"))
 }
 
 dependencies {

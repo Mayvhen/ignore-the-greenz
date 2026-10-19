@@ -3,7 +3,7 @@
 	"id": "seethroughleaves",
 	"version": "${version}",
 	"name": "See Through Leaves",
-	"description": "Your crosshair and attacks ignore leaves, so you can hit the logs hidden behind them.",
+	"description": "Your crosshair and attacks ignore leaves, grass, flowers and other decorative foliage, so you can hit what is hidden behind them.",
 	"authors": [
 		"You"
 	],

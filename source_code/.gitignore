@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+
+# Loom run directory (game files, logs, worlds)
+run/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS noise
+.DS_Store
+Thumbs.db
